@@ -1,0 +1,44 @@
+<div class="container">
+    <form #loginForm="ngForm" (ngSubmit)="submitLogin(loginForm)">
+        <!-- Panel -->
+        <div class="panel panel-primary">
+            <!-- Heading -->
+            <div class="panel-heading">
+                <h4><b> Login </b></h4>
+            </div>
+    
+            <!-- Body -->
+            <div class="panel-body">
+                <div *ngIf="errorMsg" class="danger-color">
+                    {{ errorMsg }}
+                </div>
+                <div class="form-group">
+                    <label for="username" class="control-label">Username*</label>
+                    <input type="text"
+                        id="username"
+                        class="form-control"
+                        ngModel
+                        name="username"
+                        #username="ngModel"
+                        required>
+                    <div class="help-block danger-color" *ngIf="username.invalid && username.touched">
+                        Username number is required.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="control-label">Password*</label>
+                    <input type="password" id="password" class="form-control" ngModel name="password"
+                        #password="ngModel" required password>
+                    <div class="help-block danger-color" *ngIf="password.invalid && password.touched">
+                        Password is required.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer -->
+            <div class="panel panel-footer align-right">
+                <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+            </div>
+        </div>
+    </form>
+</div>

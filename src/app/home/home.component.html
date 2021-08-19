@@ -1,0 +1,17 @@
+<div class="container row mt-3">
+    <div class="col-md">
+        <label for="course">Select Course</label>
+        <select class="form-control" name="courses" id="courses" [(ngModel)]="course" (change)="onCourseChange()">
+            <option value="1">Course 1</option>
+            <option value="2">Course 2</option>
+            <option value="3">Course 3</option>
+            <option value="4">Course 4</option>
+        </select>
+    </div>
+    
+    <div class="col-md mt-2" style="width: 400px; height: 400px;">
+        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+            [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend" [colors]="pieChartColors">
+        </canvas>
+    </div>
+</div>
