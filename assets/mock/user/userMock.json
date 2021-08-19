@@ -1,0 +1,66 @@
+[
+    {
+        "emailAddress": "a@b.com",
+        "id": "1",
+        "name": {
+            "familyName": "P",
+            "fullName": "Muralikrishna P",
+            "givenName": "Muralikrishna"
+        },
+        "permissions": [
+            {
+                "permission": "PERMISSION_UNSPECIFIED"
+            }
+        ],
+        "photoUrl": "",
+        "verifiedTeacher": true
+    },
+    {
+        "emailAddress": "ab@ab.com",
+        "id": "2",
+        "name": {
+            "familyName": "A",
+            "fullName": "Abc A",
+            "givenName": "Abc"
+        },
+        "permissions": [
+            {
+                "permission": "PERMISSION_UNSPECIFIED"
+            }
+        ],
+        "photoUrl": "",
+        "verifiedTeacher": false
+    },
+    {
+        "emailAddress": "abc@abc.com",
+        "id": "3",
+        "name": {
+            "familyName": "AB",
+            "fullName": "Abccc AB",
+            "givenName": "Abccc"
+        },
+        "permissions": [
+            {
+                "permission": "PERMISSION_UNSPECIFIED"
+            }
+        ],
+        "photoUrl": "",
+        "verifiedTeacher": true
+    },
+    {
+        "emailAddress": "abc@abc.com",
+        "id": "4",
+        "name": {
+            "familyName": "AB",
+            "fullName": "Abccc AB",
+            "givenName": "Abccc"
+        },
+        "permissions": [
+            {
+                "permission": "PERMISSION_UNSPECIFIED"
+            }
+        ],
+        "photoUrl": "",
+        "verifiedTeacher": true
+    }
+]
